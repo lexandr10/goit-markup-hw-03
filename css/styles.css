@@ -7,6 +7,25 @@
   --hover-color: #404bbf;
   --acent-white-color: #e7e9fc;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text);
@@ -21,7 +40,47 @@ body {
 button {
   cursor: pointer;
 }
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* =============HEADER============= */
+.top-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.page-header-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav {
+  display: flex;
+  column-gap: 76px;
+}
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
+.list-contact {
+  display: flex;
+  column-gap: 40px;
+}
+
 .main-logo {
   color: var(--acent-color);
   font-family: 'Raleway', sans-serif;
@@ -66,6 +125,15 @@ button {
 /* =============HERO============= */
 .block-hero {
   background-color: var(--heading-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
+  margin-bottom: 60px;
+}
+.h-one-title {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .h-one-title {
   font-size: 56px;
@@ -75,6 +143,18 @@ button {
   letter-spacing: 1.12px;
   text-align: center;
   color: var(--white-text);
+  width: 496px;
+}
+.main-btn-hero {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 4px;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-btn-hero {
   font-family: 'Roboto', sans-serif;
@@ -92,6 +172,17 @@ button {
 }
 /* =============HERO============= /*/
 /* =============Work process============= */
+.block-workprocess {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.item-workprocess {
+  width: 264px;
+}
+.list-workprocess {
+  display: flex;
+  gap: 24px;
+}
 
 .main-text {
   font-size: 16px;
@@ -100,6 +191,14 @@ button {
 }
 /* =============Work process============= /*/
 /* =============What are we doing ============= */
+.block-doing {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.list-block-doing {
+  display: flex;
+  gap: 24px;
+}
 .h-two-title {
   font-size: 36px;
   font-style: normal;
@@ -110,10 +209,27 @@ button {
   text-align: center;
   color: var(--heading-color);
 }
+.h-two-title {
+  margin-bottom: 72px;
+}
 /* =============What are we doing ============= /*/
 /* =============Our team ============= */
+.list-ourteam {
+  display: flex;
+  gap: 24px;
+}
+.item-ourteam {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
+}
 .block-ourteam {
   background-color: var(--light-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .item-ourteam {
   background-color: var(--white-text);
@@ -128,6 +244,14 @@ button {
 }
 /* =============Our team ============= /*/
 /* =============FOOTER ============= */
+.page-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main-text-footer {
+  width: 264px;
+  margin-top: 16px;
+}
 .main-text-footer {
   font-size: 16px;
   line-height: 1.5;
@@ -152,6 +276,40 @@ button {
 }
 /* =============FOOTER =============/ */
 /* =============PORTFOLIO ============= */
+.page-potfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.list-portfolio {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.btn-list-portfolio {
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--acent-white-color);
+}
+.list-works-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.item-list-portfolio {
+  flex-basis: calc((100% - 72px) / 3);
+  display: flex;
+  border: 1px solid var(--acent-white-color);
+}
+.padding-portfolio-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px 16px;
+}
+
 .h1-title-portfolio {
   font-size: 56px;
   font-style: normal;
