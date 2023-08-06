@@ -330,6 +330,7 @@ button {
 .padding-portfolio-title {
   padding: 32px 16px;
   border: 1px solid var(--acent-white-color);
+  border-top: none;
 }
 
 .h1-title-portfolio {
