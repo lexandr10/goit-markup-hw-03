@@ -63,6 +63,10 @@ button {
 .top-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--acent-white-color);
+}
+.main-logo {
+  margin-right: 76px;
 }
 .page-header-cont {
   display: flex;
@@ -70,15 +74,19 @@ button {
 }
 .main-nav {
   display: flex;
-  column-gap: 76px;
+  align-items: center;
 }
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
+}
+.menu-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .list-contact {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .main-logo {
@@ -130,7 +138,7 @@ button {
   margin-bottom: 60px;
 }
 .h-one-title {
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -155,6 +163,7 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  min-width: 169px;
 }
 .main-btn-hero {
   font-family: 'Roboto', sans-serif;
@@ -173,8 +182,11 @@ button {
 /* =============HERO============= /*/
 /* =============Work process============= */
 .block-workprocess {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.h-three-title {
+  margin-bottom: 8px;
 }
 .item-workprocess {
   width: 264px;
@@ -219,17 +231,24 @@ button {
   gap: 24px;
 }
 .item-ourteam {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  padding-bottom: 32px;
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .block-ourteam {
   background-color: var(--light-color);
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.box-ourteam {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.text-ourteam-title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.main-text-ourteam {
+  text-align: center;
 }
 .item-ourteam {
   background-color: var(--white-text);
@@ -250,7 +269,6 @@ button {
 }
 .main-text-footer {
   width: 264px;
-  margin-top: 16px;
 }
 .main-text-footer {
   font-size: 16px;
@@ -260,6 +278,10 @@ button {
 }
 .page-footer {
   background-color: var(--heading-color);
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-footer {
   font-family: 'Raleway', sans-serif;
@@ -299,15 +321,15 @@ button {
   gap: 48px 24px;
 }
 .item-list-portfolio {
-  flex-basis: calc((100% - 72px) / 3);
+  width: calc((100% - 48px) / 3);
   display: flex;
-  border: 1px solid var(--acent-white-color);
+}
+.title-portfolio {
+  margin-bottom: 8px;
 }
 .padding-portfolio-title {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   padding: 32px 16px;
+  border: 1px solid var(--acent-white-color);
 }
 
 .h1-title-portfolio {
@@ -334,6 +356,7 @@ button {
 .btn-list-portfolio:focus {
   color: var(--white-text);
   background-color: var(--hover-color);
+  border: 1px solid transparent;
 }
 
 .text-portfolio {
