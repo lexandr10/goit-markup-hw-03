@@ -135,7 +135,6 @@ button {
   background-color: var(--heading-color);
   padding-top: 188px;
   padding-bottom: 188px;
-  margin-bottom: 60px;
 }
 .h-one-title {
   max-width: 496px;
@@ -204,7 +203,6 @@ button {
 /* =============Work process============= /*/
 /* =============What are we doing ============= */
 .block-doing {
-  padding-top: 60px;
   padding-bottom: 120px;
 }
 .list-block-doing {
